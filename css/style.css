@@ -1,0 +1,380 @@
+/* - Family: [Spartan](https://fonts.google.com/specimen/Spartan)
+- Weights: 400, 500, 700 */
+:root {
+  /* ## Colors
+
+  ### Primary */
+  
+  --Very-Dark-Magenta: hsl(300, 43%, 22%);
+  --Soft-Pink: hsl(333, 80%, 67%);
+  
+  /* ### Neutral */
+  
+  --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+  --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
+}
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+}
+html {
+  Font-size: 15px;
+}
+body {
+  font-family: ;
+}
+ul {
+  list-style: none;
+}
+.container {
+  padding-left:200px;
+  padding-right:200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width:767px){
+  .card{
+
+    margin-bottom: 100px;
+    text-align: center;
+  }
+  h2 {
+    font-size: 50px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  p {
+   font-size: 20px;
+    line-height: 1.6;
+    color: #777;
+  }
+
+  .three {
+margin-left: 20%;   
+margin-bottom: 20px;
+  }
+  svg {
+    margin: 2px;
+    margin-bottom: 10px;
+  }
+}
+@media (min-width:768px){
+
+  .card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+  }
+}
+@media (min-width:768px){
+
+  .card h2 {
+  width: 150px;
+  font-weight: bold;
+  margin: 50px 50px 20px  ;
+    
+  }
+  .card p {
+    width: 300px;
+    color: #777;
+    margin: 0  0 50px 50px  ;
+
+  }
+}
+@media (max-width:1159px){
+  .two {
+    display: flex;
+    flex-wrap: wrap;
+      margin: 20px;
+  }
+}
+@media (min-width:768px){
+  .two {
+    display: flex;
+    flex-direction: column;
+    
+      margin: 20px;
+
+  }
+  .three {
+    display: flex;
+    padding: 10px;
+    color: white;
+  }
+  .two :first-child{
+  margin-left: -30px;
+  }
+  .two :last-child{
+    margin-left: 30px;
+  }
+  .two p {
+    margin: 0 20px;
+  }
+}
+/* start card 2  */
+@media (min-width:768px){
+
+  .card2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color:var(--Dark-Grayish-Magenta); */
+   
+  }
+}
+img {
+  width: 50px;
+  border-radius: 50%;
+
+}
+.pa {
+  display:flex;
+  align-items: center;
+  padding: 20px;
+  
+}
+.pa h3 {
+  color: var(--White);
+  padding-left: 20px;
+  font-weight: bold;
+  
+}
+.pa  span {
+  color: var(--Soft-Pink);
+  padding: 20px;
+}
+
+.img-one {
+  background-color:var(--Very-Dark-Magenta);
+  transform: translateY(-40px);
+  padding: 1rem 0;
+  border-radius: 10px;
+  margin: 20px;
+
+
+}
+.img-one img {
+  height: 55px;
+  
+}
+.img-one p {
+ color: white;
+ margin: 0 50px auto;
+ line-height: 2;
+ text-align: left;
+}
+@media (max-width:767px){
+  .img-one p 
+ {
+    color: white;
+    margin: 0 20px auto;
+    line-height: 2;
+    text-align: left;
+  }
+}
+.img-two {
+  background-color:var(--Very-Dark-Magenta);
+  margin: 20px;
+  transform: translateY(-20px);
+  padding: 1rem;
+  border-radius: 10px;
+}
+.img-two p {
+  color: white;
+  margin: 0 50px auto;
+  line-height: 2;
+  text-align: left;
+ }
+ @media (max-width:767px){
+  .img-two p 
+ {
+    color: white;
+    margin: 0 20px auto;
+    line-height: 2;
+    text-align: left;
+  }
+}
+.img-three {
+  background-color:var(--Very-Dark-Magenta);
+    padding: 1rem;
+  border-radius: 10px;
+  margin: 20px;
+
+
+}
+.img-three p {
+  color: white;
+  margin: 0 50px auto;
+  line-height: 2;
+  text-align: left;
+ }
+ @media (max-width:767px){
+  .img-three p 
+ {
+    color: white;
+    margin: 0 20px auto;
+    line-height: 2;
+    text-align: left;
+  }
+}
+/* end card 2  */
+.attribution {
+  text-align: center;
+  /* background-color: rgb(177, 93, 33); */
+  padding: 10px 20px;
+  width: fit-content;
+  margin: 50px auto 80px;
+  position: relative;
+  transition: 0.3s;
+  
+}
+.attribution a {
+  text-decoration: none;
+  color: rgb(66, 25, 25);
+}
+.attribution::before,
+.attribution::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-color:var(--Very-Dark-Magenta);
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+}
+/* في الانمشن تحت خلينا - 30 خلنها 50%  */
+.attribution::before {
+  transform: translateY(-50%);
+  left: -30px;
+}
+/* في الانمشن تحت خلينا - 30 خلنها 50%  */
+.attribution::after {
+  transform: translateY(-50%);
+  right: -30px;
+}
+.attribution:hover::before {
+  z-index: -1;
+  animation: left-moving 0.5s linear forwards;
+}
+.attribution:hover::after {
+  z-index:-1;
+  animation: right-moving 0.5s linear forwards;
+}
+.attribution:hover {
+  color: white; 
+ border: 2px solid var(--Very-Dark-Magenta);
+ ;
+ transition-delay: 0.5s; 
+ font-size: 20px;
+}
+@media (max-width:767px){
+  .attribution:hover {
+    font-size: 12px;
+    border: none;
+  }
+}
+/* ده طيطل بيكون موجود معانا في التصميم علي طول  */
+.main-title {
+  text-transform: uppercase;
+  margin: 100px auto 50px;
+  border: 2px solid var(--Very-Dark-Magenta);
+  padding: 10px 20px;
+  font-size: 30px;
+  width: fit-content;
+  position: relative;
+  /* z-index: 1; */
+  transition: 0.3s;
+}
+.main-title::before,
+.main-title::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-color:var(--Very-Dark-Magenta);
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+}
+/* في الانمشن تحت خلينا - 30 خلنها 50%  */
+.main-title::before {
+  transform: translateY(-50%);
+  left: -30px;
+}
+/* في الانمشن تحت خلينا - 30 خلنها 50%  */
+.main-title::after {
+  transform: translateY(-50%);
+  right: -30px;
+}
+.main-title:hover::before {
+  color: blue;
+  z-index: -1;
+  animation: left-move 0.5s linear forwards;
+}
+.main-title:hover::after {
+  z-index:-1;
+  animation: right-move 0.5s linear forwards;
+}
+.main-title:hover {
+   color: white; 
+  border: 2px solid white;
+  transition-delay: 0.5s; 
+}
+@keyframes left-moving {
+  50% {
+    left: 0;
+    width: 40px;
+    height: 40px;
+  }
+  100% {
+    left: 0;
+    border-radius: 0;
+    width: 50%;
+    height: 100%;
+  }
+}
+@keyframes right-moving{
+  50% {
+right: 0;
+width: 40px;
+height: 40px;
+  }
+  100% {
+    right: 0;
+    border-radius: 0;
+    width: 50%;
+    height: 100%;
+  }
+}
+@keyframes left-move {
+  50% {
+    left: 0;
+    width: 12px;
+    height: 12px;
+  }
+  100% {
+    left: 0;
+    border-radius: 0;
+    width: 50%;
+    height: 100%;
+  }
+}
+@keyframes right-move {
+  50% {
+right: 0;
+width: 12px;
+height: 12px;
+  }
+  100% {
+    right: 0;
+    border-radius: 0;
+    width: 50%;
+    height: 100%;
+  }
+}
+  /* end compoents  */
